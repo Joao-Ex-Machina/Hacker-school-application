@@ -4,7 +4,7 @@
 |            | Final Project for my HackerSchool application.                                            |
 +--------------------------------------------------------------------------------------------------------+
 ||Authors: João Barreiros C. Rodrigues (Joao-Ex-Machina)                                                 |
-| Date:    09 March 2021 (created) / 10 March 2021 (saved and 1st test) / (finished)                     |
+| Date:    09 March 2021 (created) / 10 March 2021 (saved and 1st test) / 13 March 2021 (finished)       |
 |References: (main): https://create.arduino.cc/projecthub/Arduino_Scuola/a-simple-simon-says-game-25ba99 |
 |                    Important ideas: Two array comparison                                               |
 |                                                                                                        |
@@ -43,7 +43,7 @@ digitalWrite(blue_led, LOW);
 
 void loop() {
   if (level == 1){
-    generate_key(); //Since there is no right_key() before level 1, there's a need to generate a key automatically if level ==1
+    generate_key(); //Since there is no correct_key() calling before level 1, there's a need to generate a key automatically if level ==1
     }
  if (digitalRead(start_b) == LOW || level != 1){ //The game only starts if the start_b is pressed. After level one the following levels start automatically
   music = false;
